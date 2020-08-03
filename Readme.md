@@ -2,8 +2,8 @@
 
 # _University Registrar_ 
 </strong></h1>
-
 ![Workaholics books](https://media.giphy.com/media/IV9qd3vGQrjCo/giphy.gif)
+<h1 align="center">
 
 #### _Welcome to Online University C# student and courses Tracker , 2020 ver 1.0_
 
@@ -64,3 +64,4 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 
 ## Remember you can always reach out to the editors if this doesn't make sense.
 ![Monkey reading](https://media.giphy.com/media/SiMcadhDEZDm93GmTL/giphy.gif)
+</h1>
