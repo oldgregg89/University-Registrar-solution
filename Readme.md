@@ -1,4 +1,7 @@
-# _University Registrar_
+<h1 align="center"><strong>
+
+# _University Registrar_ 
+</strong></h1>
 
 ![university video](https://media.giphy.com/media/XYIeeF0HHFmSc/giphy.gif)
 
