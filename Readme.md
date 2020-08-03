@@ -3,7 +3,7 @@
 # _University Registrar_ 
 </strong></h1>
 
-![university video](https://media.giphy.com/media/XYIeeF0HHFmSc/giphy.gif)
+![Workaholics books](https://media.giphy.com/media/IV9qd3vGQrjCo/giphy.gif)
 
 #### _Welcome to Online University C# student and courses Tracker , 2020 ver 1.0_
 
