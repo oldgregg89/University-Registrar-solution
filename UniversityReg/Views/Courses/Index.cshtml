@@ -6,15 +6,16 @@
 
 <h2>Course Details</h2>
 <hr />
-<h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h3>
+<h3>Name: @Html.DisplayFor(model => model.Name)</h3>
+<h3>Number: @Html.DisplayFor(model => model.Number)</h3>
 
 @if(@Model.Students.Count == 0)
 {
-  <p>This Course doesnt have any Students</p>
+  <p>No one has signed up for this course</p>
 }
 else
 {
-  <h4>Students the Course contains:</h4>
+  <h4>Enrolled Students:</h4>
   <ul>
   @foreach(var join in Model.Students)
   {
