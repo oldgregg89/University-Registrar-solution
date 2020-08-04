@@ -16,6 +16,5 @@
 {
   <li>@Html.ActionLink($"{course.Name}", "Details", new { id = course.CourseId }) || @course.Number</li>
 }
-
-<p>@Html.ActionLink("Add new course", "Create")</p>
-<p>@Html.ActionLink("return home", "Index", "Home")
+<input type="button" value="Add new course" onclick="location.href='@Url.Action("Create", "Courses")';" class="btn btn-primary" />
+<input type="button" value="Return Home" onclick="location.href='@Url.Action("Index", "Home")';" class="btn btn-primary" />

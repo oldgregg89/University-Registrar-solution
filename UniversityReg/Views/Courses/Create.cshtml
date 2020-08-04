@@ -17,5 +17,5 @@
     <input type="submit" value="Add new course" class="btn btn-default" />
 }
 
-<p>@Html.ActionLink("Course List", "Index")</p>
-<p>@Html.ActionLink("return home", "Index", "Home")
+<input type="button" value="Course List" onclick="location.href='@Url.Action("Index", "Courses")';" class="btn btn-primary" />
+<input type="button" value="Return Home" onclick="location.href='@Url.Action("Index", "Home")';" class="btn btn-primary" />

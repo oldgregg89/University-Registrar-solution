@@ -34,3 +34,8 @@ img {
   border-style: unset;
   border-color: tomato;
 }
+
+.studentContainer {
+  padding-left: 10px;
+  padding-right: 10px;
+}

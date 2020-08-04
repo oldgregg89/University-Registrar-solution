@@ -6,8 +6,8 @@
 
 <h2>Course Details</h2>
 <hr />
-<h3>Name: @Html.DisplayFor(model => model.Name)</h3>
-<h3>Number: @Html.DisplayFor(model => model.Number)</h3>
+<h3>@Html.DisplayFor(model => model.Name)</h3>
+<h3>@Html.DisplayFor(model => model.Number)</h3>
 
 @if(@Model.Students.Count == 0)
 {
@@ -15,16 +15,17 @@
 }
 else
 {
-  <h4>Enrolled Students:</h4>
-  <ul>
-  @foreach(var join in Model.Students)
-  {
-    <li>@join.Student.Name</li>
-  }
-  </ul>
+  <div class="well">
+      <h4 class="col-sm-3">Enrolled Students:</h4>
+      <ul>
+      @foreach(var join in Model.Students)
+      {
+        <li class="col-sm-9">@join.Student.Name</li>
+      }
+      </ul>
+  </div>
 }
-
-<p>@Html.ActionLink("Edit Course", "Edit", new { id = Model.CourseId })</p>
-<p>@Html.ActionLink("Delete Course", "Delete", new { id = Model.CourseId })</p>
-<p>@Html.ActionLink("Course List", "Index")</p>
-<p>@Html.ActionLink("return home", "Index", "Home")
+<input type="button" value="Edit Course" onclick="location.href='@Url.Action("Edit", "Courses", new { id = Model.CourseId })';" class="btn btn-primary" />
+<input type="button" value="Delete Course" onclick="location.href='@Url.Action("Delete", "Courses", new { id = Model.CourseId })';" class="btn btn-primary" />
+<input type="button" value="Course List" onclick="location.href='@Url.Action("Index", "Courses")';" class="btn btn-primary" />
+<input type="button" value="Return Home" onclick="location.href='@Url.Action("Index", "Home")';" class="btn btn-primary" />

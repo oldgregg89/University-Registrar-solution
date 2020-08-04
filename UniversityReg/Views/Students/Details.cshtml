@@ -31,8 +31,8 @@ else
   </ul>
 }
 
-<p>@Html.ActionLink("Back to list", "Index")</p>
-<p>@Html.ActionLink("Edit Student", "Edit", new { id = Model.StudentId })</p>
-<p>@Html.ActionLink("Delete Student", "Delete", new { id = Model.StudentId })</p>
-<p>@Html.ActionLink("Add a Course", "AddCourse", new { id = Model.StudentId })</p>
-<p>@Html.ActionLink("Return home", "Index", "Home")</p>
+<input type="button" value="Return Home" onclick="location.href='@Url.Action("Index", "Home")';" class="btn btn-primary" />
+<input type="button" value="Edit Student" onclick="location.href='@Url.Action("Edit", "Students", new { id = Model.StudentId })';" class="btn btn-primary" />
+<input type="button" value="Delete Student" onclick="location.href='@Url.Action("Delete", "Students", new { id = Model.StudentId })';" class="btn btn-primary" />
+<input type="button" value="Add a Course" onclick="location.href='@Url.Action("AddCourse", "Students", new { id = Model.StudentId })';" class="btn btn-primary" />
+<input type="button" value="Back to list" onclick="location.href='@Url.Action("Index", "Students")';" class="btn btn-primary" />
