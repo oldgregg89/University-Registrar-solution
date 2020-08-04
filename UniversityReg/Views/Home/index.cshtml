@@ -1,6 +1,6 @@
 @{
   Layout = "_Layout";
 }
-<h1>Welcome to the Registrar!</h1>
-<p>@Html.ActionLink("Student List", "Index", "Students")</p> 
-<p>@Html.ActionLink("Course List", "Index", "Courses")</p>
+<h1>Welcome to the University of LaLa Land!</h1>
+<input type="button" value="Student List" onclick="location.href='@Url.Action("Index", "Students")';" class="btn btn-primary" />
+<input type="button" value="Course List" onclick="location.href='@Url.Action("Index", "Courses")';" class="btn btn-primary" />

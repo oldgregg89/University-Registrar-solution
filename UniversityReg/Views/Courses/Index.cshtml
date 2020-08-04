@@ -14,7 +14,7 @@
 
 @foreach (Course course in Model)
 {
-  <li>@Html.ActionLink($"{course.Name}", "Name", new { id = course.CourseId }) || @course.Number</li>
+  <li>@Html.ActionLink($"{course.Name}", "Details", new { id = course.CourseId }) || @course.Number</li>
 }
 
 <p>@Html.ActionLink("Add new course", "Create")</p>

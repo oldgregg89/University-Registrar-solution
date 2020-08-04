@@ -13,3 +13,5 @@ namespace UniversityReg.Models
     public string Name { get; set;}
     public virtual ICollection<Course> Courses { get; set;}
     public virtual ICollection<Student> Students { get; set;}
+  }
+}

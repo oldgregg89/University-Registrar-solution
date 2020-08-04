@@ -30,6 +30,8 @@ in the terminal
 * add a file called `appsetting.json` in the HairSalon directory.
 * in `appsetting.json` add ![appsetting.json](Assets/setup.png)
 * fill in your `server`, `port`,`database`,`uid`, and `pwd`
+* if everything looks correct you should see this as the home page: 
+![Home-page](Assets/UniversityWebpage.png)
 
 __
 

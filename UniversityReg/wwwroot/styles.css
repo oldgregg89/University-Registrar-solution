@@ -24,3 +24,13 @@ body {
 h1 {
   text-shadow: blueviolet;
 }
+
+img {
+  padding-top: 10px;
+  margin: auto;
+  display: block;
+  width: 300px;
+  height: 300px;
+  border-style: unset;
+  border-color: tomato;
+}
