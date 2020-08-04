@@ -39,7 +39,7 @@ namespace UniversityReg.Controllers
     {
       if (CourseId != 0)
       {
-        _db.CourseStudent.Add(new CourseStudent() { CourseId = CourseId, StudentId = student.studentId });
+        _db.CourseStudent.Add(new CourseStudent() { CourseId = CourseId, StudentId = student.StudentId });
       }
       _db.Entry(student).State = EntityState.Modified;
       _db.SaveChanges();

@@ -3,7 +3,7 @@
 }
 
 @using UniversityReg.Models;
-@model List<University.Models.Student>;
+@model List<UniversityReg.Models.Student>;
 
 <h1>Students</h1>
 
@@ -14,7 +14,7 @@
 
 @foreach (Student student in Model)
 {
-  <li>@Html.ActionLink($"{student.Name}", "Name", new { id = student.StudentId }) | @student.Course.Name</li>
+  <li>@Html.ActionLink($"{student.Name}", "Name", new { id = student.StudentId })</li>
 }
 
 <p>@Html.ActionLink("Add new student", "Create")</p>

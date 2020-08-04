@@ -3,7 +3,7 @@
 }
 
 @using UniversityReg.Models;
-@model List<University.Models.Course>;
+@model List<UniversityReg.Models.Course>;
 
 <h1>Courses</h1>
 
@@ -14,7 +14,7 @@
 
 @foreach (Course course in Model)
 {
-  <li>@Html.ActionLink($"{course.Name}", "Name", new { id = course.CourseId }) || @Model.Number</li>
+  <li>@Html.ActionLink($"{course.Name}", "Name", new { id = course.CourseId }) || @course.Number</li>
 }
 
 <p>@Html.ActionLink("Add new course", "Create")</p>

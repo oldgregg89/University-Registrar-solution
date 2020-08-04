@@ -1,6 +1,6 @@
-namespace UniversityReg
+namespace UniversityReg.Models
 {
-  public class CourseStudent 
+  public class CourseStudent
   {
     public int CourseStudentId {get; set;} 
     public int CourseId {get; set;}
