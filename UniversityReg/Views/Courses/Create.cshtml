@@ -4,17 +4,17 @@
 
 @model UniversityReg.Models.Course
 
-<h1>Edit this course</h1>
+<h1>Add New Course</h1>
 
 @using (Html.BeginForm())
 {
     @Html.LabelFor(model => model.Name)
-    @Html.EditorFor(model => model.Name)
+    @Html.TextBoxFor(model => model.Name)
 
     @Html.LabelFor(model => model.Number)
-    @Html.EditorFor(model => model.Number)
+    @Html.TextBoxFor(model => model.Number)
 
-    <input type="submit" value="Update course" class="btn btn-default" />
+    <input type="submit" value="Add new course" class="btn btn-default" />
 }
 
 <p>@Html.ActionLink("Course List", "Index")</p>

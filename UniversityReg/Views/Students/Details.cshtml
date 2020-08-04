@@ -6,11 +6,14 @@
 
 <h2>Student Details</h2>
 <hr />
-<h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h3>
+<h3>Name: @Html.DisplayFor(model => model.Name)</h3>
+<h3>Enrollment Date: @Html.DisplayFor(model => model.EnrollmentDate)</h3>
+<h3>Major: </h3>
+<h3>Current Courses: </h3>
 
 @if(@Model.Courses.Count == 0)
 {
-  <p>This item does not belong to any courses</p>
+  <p>This student does not belong to any courses</p>
 }
 else
 {
