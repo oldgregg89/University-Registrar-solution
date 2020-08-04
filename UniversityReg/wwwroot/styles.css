@@ -1,0 +1,26 @@
+body {
+  background-image: url(https://images.pexels.com/photos/2440663/pexels-photo-2440663.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: whitesmoke;
+  position: relative; 
+  color: black;
+  font-family: 'Merriweather', serif;
+}
+
+.container {
+  background-color: aliceblue;
+  opacity: 85%;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-radius: 15px;
+  border-style: solid;
+}
+
+h1 {
+  text-shadow: blueviolet;
+}

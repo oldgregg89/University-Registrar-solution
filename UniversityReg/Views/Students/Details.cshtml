@@ -7,9 +7,9 @@
 <h2>Student Details</h2>
 <hr />
 <h3>Name: @Html.DisplayFor(model => model.Name)</h3>
-<h3>Enrollment Date: @Html.DisplayFor(model => model.EnrollmentDate)</h3>
+<h3>Enrollment Date: @Html.ValueFor(model => model.EnrollmentDate, "{0:MM/dd/yyyy}")</h3>
 <h3>Major: </h3>
-<h3>Current Courses: </h3>
+
 
 @if(@Model.Courses.Count == 0)
 {
@@ -35,3 +35,4 @@ else
 <p>@Html.ActionLink("Edit Student", "Edit", new { id = Model.StudentId })</p>
 <p>@Html.ActionLink("Delete Student", "Delete", new { id = Model.StudentId })</p>
 <p>@Html.ActionLink("Add a Course", "AddCourse", new { id = Model.StudentId })</p>
+<p>@Html.ActionLink("Return home", "Index", "Home")</p>
